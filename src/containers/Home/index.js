@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Header} from '../../components'
+import {Header, Carousel} from '../../components'
 import './home.css'
 
 class Home extends Component {
@@ -10,8 +10,13 @@ class Home extends Component {
 
     render() {
         return (
-            <div>
-                <Header></Header>
+            <div className="home-container">
+                <div className="home-header-container">
+                    <Header></Header>
+                </div>
+                <div className="home-carousel-container">
+                    <Carousel></Carousel>
+                </div>
             </div>
         )
     }

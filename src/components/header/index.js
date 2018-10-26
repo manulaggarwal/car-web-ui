@@ -3,6 +3,7 @@ import './Header.css'
 
 import logo from './car-logo.png'
 import {Button, Image} from 'react-bootstrap';
+import {Navbar} from '../index'
 
 const header = () => (
     
@@ -14,6 +15,9 @@ const header = () => (
             </div>
             <div className="header-action-items">
                 <Button variant="light"><b>Register/Login</b></Button>
+            </div>
+            <div className="header-navbar">
+                <Navbar></Navbar>
             </div>
         </div>
     </div>

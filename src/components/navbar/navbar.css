@@ -1,0 +1,9 @@
+.navbar-container .caret {
+    display: none;
+}
+
+.navbar-container .dropdown-toggle {
+    text-decoration: none;
+    color: white;
+    font-size: 34px;
+}

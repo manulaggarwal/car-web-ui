@@ -14,11 +14,17 @@
 
 .header-logo {
     color: white;
-    flex: 0.5;
+    flex: 33%;
     text-align: center;
 }
 
 .header-action-items {
-    flex: 0.5;
+    flex: 20%;
     text-align: center;
 }
+
+.header-navbar {
+    flex: 0%;
+    list-style: none
+}
+

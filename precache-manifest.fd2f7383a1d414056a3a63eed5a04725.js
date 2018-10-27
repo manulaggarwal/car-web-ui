@@ -1,5 +1,9 @@
 self.__precacheManifest = [
   {
+    "revision": "35d44bed2c914d1d74619848b1f11d53",
+    "url": "/car-web-ui/static/media/moving-car.35d44bed.gif"
+  },
+  {
     "revision": "1d2254b494c305c4a5d53685e9b8929a",
     "url": "/car-web-ui/static/media/car4.1d2254b4.png"
   },
@@ -16,19 +20,19 @@ self.__precacheManifest = [
     "url": "/car-web-ui/static/js/runtime~main.660507fe.js"
   },
   {
-    "revision": "f7431041ded1b7e89860",
-    "url": "/car-web-ui/static/js/main.f7431041.chunk.js"
+    "revision": "3d56139b294871912a35",
+    "url": "/car-web-ui/static/js/main.3d56139b.chunk.js"
   },
   {
-    "revision": "ca35eb4960fc8083c51c",
-    "url": "/car-web-ui/static/js/1.ca35eb49.chunk.js"
+    "revision": "78acefd0c94cb193ec19",
+    "url": "/car-web-ui/static/js/1.78acefd0.chunk.js"
   },
   {
-    "revision": "f7431041ded1b7e89860",
-    "url": "/car-web-ui/static/css/main.c59273cb.chunk.css"
+    "revision": "3d56139b294871912a35",
+    "url": "/car-web-ui/static/css/main.30c27cf5.chunk.css"
   },
   {
-    "revision": "18dd973184fa69aaf3531bd164902989",
+    "revision": "50f9ef45bdca785bf8947bc971dbdd08",
     "url": "/car-web-ui/index.html"
   }
 ];

@@ -7,3 +7,12 @@
     color: white;
     font-size: 34px;
 }
+
+.navbar-container .dropdown-menu {
+    border-color: gray;
+    background-color: black;
+}
+
+.navbar-container .dropdown-menu a {
+    color: white;
+}

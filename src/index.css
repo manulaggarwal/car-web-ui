@@ -6,9 +6,45 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.modal-content {
+  background-color: black;
+  border-radius: 0px;
+  border-color: white;
+}
+
+.modal-header .modal-title {
+  color: white;
+}
+
+.modal-body .form-group .form-control {
+  background-color: black;
+  color: white;
+  border-radius: 0px;
+  border-color: white;
+}
+
+.modal-footer .mdl-btn {
+  color: white;
+  background-color: black;
+  font-weight: bold;
+}
+
+.modal-footer .mdl-btn-close:active {
+  background-color: gray;
+}
+
+.modal-footer .mdl-btn-primary {
+  background-color: blue;
+}
+
+.modal-footer .mdl-btn-primary:active {
+  background: steelblue;
 }

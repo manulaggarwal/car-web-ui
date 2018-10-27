@@ -1,8 +1,6 @@
 .header-banner-container {
     width: 100%;
-    background-color: black;
     display: flex;
-    opacity: 0.85;
 }
 
 .header-content-alignment {
@@ -15,7 +13,8 @@
 .header-logo {
     color: white;
     flex: 33%;
-    text-align: center;
+    text-align: left;
+    margin-left: 25px;
 }
 
 .header-action-items {

@@ -7,7 +7,7 @@ class HeaderNavbar extends Component {
     render() {
         return (
             <div className="navbar-container">
-                <NavDropdown eventKey={1} title="&#9776;" >
+                <NavDropdown eventKey={1} title="&#9776;" id="header-navbar">
                     <MenuItem eventKey={1.1}>How It Works?</MenuItem>
                     <MenuItem eventKey={1.2}>Services</MenuItem>
                 </NavDropdown>

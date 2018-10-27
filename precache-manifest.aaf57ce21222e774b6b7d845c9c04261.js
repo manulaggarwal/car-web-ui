@@ -16,19 +16,19 @@ self.__precacheManifest = [
     "url": "/car-web-ui/static/js/runtime~main.660507fe.js"
   },
   {
-    "revision": "2de9de953a45f7eca6c4",
-    "url": "/car-web-ui/static/js/main.2de9de95.chunk.js"
+    "revision": "f7431041ded1b7e89860",
+    "url": "/car-web-ui/static/js/main.f7431041.chunk.js"
   },
   {
-    "revision": "145eb21de9e3f11be773",
-    "url": "/car-web-ui/static/js/1.145eb21d.chunk.js"
+    "revision": "ca35eb4960fc8083c51c",
+    "url": "/car-web-ui/static/js/1.ca35eb49.chunk.js"
   },
   {
-    "revision": "2de9de953a45f7eca6c4",
-    "url": "/car-web-ui/static/css/main.c3e28d06.chunk.css"
+    "revision": "f7431041ded1b7e89860",
+    "url": "/car-web-ui/static/css/main.c59273cb.chunk.css"
   },
   {
-    "revision": "9699752c7b75a87bf73b2b4d066b8043",
+    "revision": "18dd973184fa69aaf3531bd164902989",
     "url": "/car-web-ui/index.html"
   }
 ];

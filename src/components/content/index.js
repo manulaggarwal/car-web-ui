@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import './content.css'
+import {Image} from 'react-bootstrap'
+import movingCar from './moving-car.gif'
 
 const title = ({title}) => (
     <div>
@@ -14,7 +16,14 @@ class content extends Component {
             <div>
                 {this.props.children}
                 <div className="content-text">
-                    <p>{this.props.text}</p>
+                    <div className="content-text-image-right">
+                        <p>{this.props.text}</p>
+                        {
+                            this.props.hasImage? (
+                                <Image src={movingCar}></Image>
+                            ): null
+                        }
+                    </div>
                 </div>
             </div>
         );

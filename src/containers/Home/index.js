@@ -80,7 +80,7 @@ class Home extends Component {
                         animateIn="fadeIn"
                     >
                         <div className="home-content-2">
-                            <Content text={this.state.text[1]}>
+                            <Content text={this.state.text[1]} hasImage={true}>
                                 <Content.title title={this.state.title[1]}></Content.title>
                             </Content>
                         </div>

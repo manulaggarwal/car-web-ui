@@ -1,3 +1,7 @@
 .content-text {
     margin: 0% 25% 0% 25%;
 }
+
+.content-text-image-right {
+    display: flex;
+}

@@ -1,7 +1,7 @@
 {
   "main.css": "/car-web-ui/static/css/main.9d9d53a8.chunk.css",
-  "main.js": "/car-web-ui/static/js/main.83b16b26.chunk.js",
-  "main.js.map": "/car-web-ui/static/js/main.83b16b26.chunk.js.map",
+  "main.js": "/car-web-ui/static/js/main.0b2226c7.chunk.js",
+  "main.js.map": "/car-web-ui/static/js/main.0b2226c7.chunk.js.map",
   "static/js/1.cb9243a8.chunk.js": "/car-web-ui/static/js/1.cb9243a8.chunk.js",
   "static/js/1.cb9243a8.chunk.js.map": "/car-web-ui/static/js/1.cb9243a8.chunk.js.map",
   "runtime~main.js": "/car-web-ui/static/js/runtime~main.660507fe.js",
@@ -12,6 +12,6 @@
   "static/media/car3.png": "/car-web-ui/static/media/car3.908d29fe.png",
   "static/css/main.9d9d53a8.chunk.css.map": "/car-web-ui/static/css/main.9d9d53a8.chunk.css.map",
   "index.html": "/car-web-ui/index.html",
-  "precache-manifest.ec4d3baacb9bc6f9b5294a0e10f79ee3.js": "/car-web-ui/precache-manifest.ec4d3baacb9bc6f9b5294a0e10f79ee3.js",
+  "precache-manifest.fdfd26f1812ed83a83c5fbfeab1b10bb.js": "/car-web-ui/precache-manifest.fdfd26f1812ed83a83c5fbfeab1b10bb.js",
   "service-worker.js": "/car-web-ui/service-worker.js"
 }

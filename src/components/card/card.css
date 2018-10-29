@@ -1,0 +1,79 @@
+.card-main{
+    margin-top: 8%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-main .carousel-indicators {
+    display: none;
+}
+
+.card-main .carousel-control {
+    color: gold;
+    background-image: none;
+    opacity: 1;
+}
+
+.card-main .carousel-control.right {
+    right: -65px;
+}
+
+.card-main .carousel-control.left {
+    left: -65px;
+}
+
+.card-dimension {
+    width: 370px;
+    height: 230px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    flex: 0.25;
+    border-bottom: 3px solid gold;
+    background-color: black;
+    display: flex;
+}
+
+.card-header span {
+    text-align: left;
+    color: white;
+    font-size: x-large;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: fantasy;
+}
+
+.card-body {
+    flex: 0.50;
+    background-color: black;
+    display: flex;
+    align-items: center;    
+}
+
+.card-body span {
+    color: white;
+    flex: 1;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.card-footer {
+    flex: 0.25;
+    border-top: 3px solid gold;
+    background-color: black;
+    display: flex;   
+    text-align: left;
+}
+
+.card-footer span {
+    color: white;
+    flex: 1;
+    align-self: flex-end;
+}
+

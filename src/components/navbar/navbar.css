@@ -6,6 +6,7 @@
     text-decoration: none;
     color: white;
     font-size: 34px;
+    padding: 0px 10px 5px 10px;
 }
 
 .navbar-container .dropdown-menu {
@@ -15,4 +16,13 @@
 
 .navbar-container .dropdown-menu a {
     color: white;
+    font-weight: bold;
+}
+
+.navbar-container .dropdown-menu a:hover {
+    background-color: gray;
+}
+
+.navbar-container .dropdown-toggle:hover {
+    background-color: gray;
 }

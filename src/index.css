@@ -29,6 +29,7 @@ code {
   color: white;
   border-radius: 0px;
   border-color: white;
+  -webkit-appearance: none;
 }
 
 .modal-footer .mdl-btn {
@@ -47,4 +48,20 @@ code {
 
 .modal-footer .mdl-btn-primary:active {
   background: steelblue;
+}
+
+.has-error .form-control:focus {
+  border-color: #843534 !important;
+}
+
+.has-error .form-control {
+  border-color: #a94442 !important;
+}
+
+.has-success .form-control {
+  border-color: #3c763d !important;
+}
+
+.has-success .form-control:focus {
+  border-color: #2b542c !important;
 }

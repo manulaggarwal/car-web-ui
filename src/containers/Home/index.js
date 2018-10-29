@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
-import {Header, Carousel, Content, Footer, Modal} from '../../components'
+import {Header, Carousel, Content, Footer, Card} from '../../components'
 import './home.css'
 import ScrollAnimation from 'react-animate-on-scroll';
+import {RegisterLogin} from '../index'
 
 class Home extends Component {
     
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             text : [
                 this.text,
@@ -17,7 +18,8 @@ class Home extends Component {
                 "Title 2"
             ],
             scrollValueY : (window && window.scrollY) || 0,
-            openModal: false       
+            openModal: false,
+            isLoggedIn: props.isLoggedIn       
         }
         this.handleScroll = this.handleScroll.bind(this);
         this.closeModal = this.closeModal.bind(this);
@@ -65,6 +67,9 @@ class Home extends Component {
                 <div className="home-carousel-container">
                     <Carousel></Carousel>
                 </div>
+                <div className="home-license-cards">
+                    <Card></Card>
+                </div>
                 <div className="home-content">
                     <ScrollAnimation 
                         animateIn="fadeIn"
@@ -92,11 +97,12 @@ class Home extends Component {
                 {
                     this.state.openModal? (
                         <div className="home-modal-container">
-                            <Modal 
+                            <RegisterLogin
                                 onExit={this.closeModal} 
                                 show={this.state.openModal}
+                                step={this.state.isLoggedIn?"loggedIn":"initial"}
                             >
-                            </Modal>
+                            </RegisterLogin>
                         </div>
                     ) : null
                 }

@@ -1,3 +1,5 @@
 .carousel-item-inner-container {
     background-color: white;
+    display: flex;
+    justify-content: center;
 }

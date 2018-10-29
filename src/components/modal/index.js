@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import './modal.css'
-import {Modal, FormGroup, FormControl, Button} from 'react-bootstrap'
+import {Modal, Button} from 'react-bootstrap'
 
 class modal extends Component {
 
@@ -8,23 +8,14 @@ class modal extends Component {
         return (
                 <Modal show={this.props.show}>
                     <Modal.Header>
-                        <Modal.Title>Enter Email-ID/Mobile-Number</Modal.Title>
+                        <Modal.Title>{this.props.title}</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <form>
-                            <FormGroup controlId="emailOrPhoneGroup">
-                                <FormControl
-                                    type="text"
-                                    placeholder="Enter Email-ID/Mobile-Number"
-                                    onChange={()=>null}
-                                >
-                                </FormControl>
-                            </FormGroup>
-                        </form>
+                        {this.props.children}
                     </Modal.Body>
                     <Modal.Footer>
                         <Button className="mdl-btn mdl-btn-close" onClick={this.props.onExit}>Close</Button>
-                        <Button className="mdl-btn mdl-btn-primary">Next</Button>
+                        <Button className="mdl-btn mdl-btn-primary" onClick={this.props.onPrimaryButtonClick}>{this.props.formName === "register"? "Register":"Next"}</Button>
                     </Modal.Footer>
                 </Modal>
         );

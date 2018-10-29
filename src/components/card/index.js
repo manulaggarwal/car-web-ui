@@ -34,6 +34,19 @@ class card extends Component {
                             </div>
                         </div>
                     </Carousel.Item>
+                    <Carousel.Item>
+                        <div className="card-dimension">
+                            <div className="card-header">
+                                <span>Automatic Motor License</span>
+                            </div>
+                            <div className="card-body">
+                                <span>International Travel</span>
+                            </div>
+                            <div className="card-footer">
+                                <span>Starting From: € 15,99</span>
+                            </div>
+                        </div>
+                    </Carousel.Item>
                 </Carousel>
             </div>
         );

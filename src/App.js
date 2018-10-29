@@ -8,7 +8,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      appName: "Relaxi-Taxi",
+      appName: "VolksAuto",
       isLoggedIn: checkIfloggedIn()
     }
     this.updateLoggedInState = this.updateLoggedInState.bind(this)

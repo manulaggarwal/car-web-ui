@@ -57,13 +57,6 @@ class Home extends Component {
     render() {
         return (
             <div className="home-container">
-                <div className={this.state.scrollValueY>0? "home-header-container home-header-container-color-scroll": "home-header-container home-header-container-color-top"} >
-                    <Header 
-                        appName={this.props.appName} 
-                        onClick={this.openModal}
-                    >
-                    </Header>
-                </div>
                 <div className="home-carousel-container">
                     <Carousel></Carousel>
                 </div>
@@ -94,18 +87,7 @@ class Home extends Component {
                 <div className="home-footer-container">
                     <Footer appName={this.props.appName}></Footer>
                 </div>
-                {
-                    this.state.openModal? (
-                        <div className="home-modal-container">
-                            <RegisterLogin
-                                onExit={this.closeModal} 
-                                show={this.state.openModal}
-                                step={this.state.isLoggedIn?"loggedIn":"initial"}
-                            >
-                            </RegisterLogin>
-                        </div>
-                    ) : null
-                }
+                
             </div>
         )
     }

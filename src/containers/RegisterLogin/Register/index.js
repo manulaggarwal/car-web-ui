@@ -1,9 +1,27 @@
 import React, {Component} from 'react'
 import {Modal} from '../../../components'
 import {Form, FormGroup, FormControl, ControlLabel, Row, Col} from 'react-bootstrap'
+import DatePicker from 'react-datepicker'
+import moment from 'moment'
+import 'react-datepicker/dist/react-datepicker.css'
+import './register.css'
 
 class Register extends Component {
     
+    constructor(props) {
+        super(props);
+        this.state = {
+            date: moment()
+        }
+        this.handleDOBDateChange = this.handleDOBDateChange.bind(this)
+    }
+
+    handleDOBDateChange(date) {
+        this.setState({
+            date: date
+        })
+    }
+
     render() {
         return (
             <div className="register-main">
@@ -54,7 +72,19 @@ class Register extends Component {
                         >
                             <ControlLabel style={{color:"white"}}>Date Of Birth *</ControlLabel>
                             <Row>
-                                <Col sm={3}>
+                                <Col xs={12}>
+                                    <DatePicker
+                                        selected = {this.state.date}
+                                        onChange = {this.handleDOBDateChange}
+                                        showMonthDropdown
+                                        showYearDropdown
+                                    >
+
+                                    </DatePicker>
+                                </Col>
+                                
+
+                                {/* <Col sm={3}>
                                     <FormControl
                                         componentClass="select"
                                         placeholder="dd"
@@ -81,7 +111,7 @@ class Register extends Component {
                                         <option value="1970">1970</option>
                                     </FormControl>
                                     <FormControl.Feedback></FormControl.Feedback>
-                                </Col>
+                                </Col> */}
                             </Row>   
                         </FormGroup>
                         <FormGroup

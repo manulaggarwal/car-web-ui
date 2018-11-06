@@ -3,22 +3,6 @@
     flex-direction: column;
 }
 
-.home-header-container {
-    flex: 1;
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    background-color: black;
-}
-
-.home-header-container-color-top {
-    opacity: 1;
-}
-
-.home-header-container-color-scroll {
-    opacity: 0.85;
-}
-
 .home-carousel-container {
     flex: 1;
     margin-top: 100px;

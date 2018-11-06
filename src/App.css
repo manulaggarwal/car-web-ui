@@ -1,3 +1,17 @@
-.btn, .dropdown-menu {
-    border-radius: 0px;
+
+
+.app-header-container {
+    flex: 1;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: black;
+}
+
+.app-header-container-color-top {
+    opacity: 1;
+}
+
+.app-header-container-color-scroll {
+    opacity: 0.85;
 }

@@ -65,3 +65,7 @@ code {
 .has-success .form-control:focus {
   border-color: #2b542c !important;
 }
+
+.btn, .dropdown-menu {
+  border-radius: 0px;
+}

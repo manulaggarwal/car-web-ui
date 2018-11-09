@@ -1,0 +1,70 @@
+.thumbnail-border {
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 320px;
+    width: 380px;
+    margin: 8% 5% 8% 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail-inner-card {
+    border: 1px solid;
+    width: 370px;
+    height: 230px;
+    margin-top: 4px;
+    margin-left: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail-inner-card-header {
+    flex: 0.25;
+    border-bottom: 3px solid gold;
+    background-color: black;
+    display: flex;
+}
+
+.thumbnail-inner-card-header span {
+    text-align: left;
+    color: white;
+    font-size: x-large;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: fantasy;
+}
+
+.thumbnail-inner-card-body {
+    flex: 0.50;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.thumbnail-inner-card-footer {
+    flex: 0.25;
+    border-top: 3px solid gold;
+    background-color: black;
+    display: flex;   
+    text-align: left;
+}
+
+.thumbnail-inner-card-body span {
+    color: white;
+    flex: 1;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 40px;
+    font-weight: bold;
+}
+.thumbnail-inner-card-footer span {
+    color: white;
+    flex: 1;
+    align-self: flex-end;
+}
+
+.thumbnail-inner-card-option{
+    margin: 5%;
+}

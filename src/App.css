@@ -1,4 +1,8 @@
 
+.app-container {
+    display: flex;
+    flex-direction: column;
+}
 
 .app-header-container {
     flex: 1;

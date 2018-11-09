@@ -67,6 +67,8 @@ class LoginRegister extends Component {
                 <Register
                     onExit={this.props.onExit} 
                     show={this.props.show}
+                    value={this.state.value}
+                    update={this.props.update}
                 >
                 </Register>
             </div>

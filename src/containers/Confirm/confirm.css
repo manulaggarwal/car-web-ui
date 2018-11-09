@@ -1,0 +1,26 @@
+.confirm-container {
+    margin-top: 100px;
+    display: flex;
+    background-color: white;
+}
+
+.confirm-content {
+    width: 100%;
+    height: 400px;
+}
+
+.confirm-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    flex: 1;
+}
+
+.confirm-hide-loader {
+    display: none;
+}
+
+.confirm-loader-booking-text {
+    margin-top: 25%;
+    margin-left: 25%;
+}

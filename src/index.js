@@ -3,8 +3,21 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// import {Router, Route} from 'react-router';
+// import {createBrowserHistory} from 'history';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// const browserHistory = createBrowserHistory();
+
+ReactDOM.render(
+    <App></App>
+    // <Router history={browserHistory}>
+    //     <Route path="/" component={App}>
+    //     </Route>
+    //     {/* <Route path="/book">
+
+    //     </Route> */}
+    // </Router>
+    , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

@@ -26,3 +26,13 @@
 .home-content > div {
     margin-top: 8%;
 }
+
+.home-book-button button {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+.home-book-button button:hover {
+    background-color: gray;
+}

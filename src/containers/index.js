@@ -1,2 +1,6 @@
 export {default as Home} from './Home'
 export {default as RegisterLogin} from './RegisterLogin'
+export {default as License} from './License'
+export {default as Destination} from './Destination'
+export {default as Payment} from './Payment'
+export {default as Confirm} from './Confirm'

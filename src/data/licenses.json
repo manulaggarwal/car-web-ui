@@ -1,0 +1,44 @@
+{
+    "licenses": [ 
+        {
+            "name": "Individual Travel",
+            "type": "Automatic Motor License",
+            "price": "€ 9,99"
+        },
+        {
+            "name": "Ride Sharing Travel",
+            "type": "Automatic Motor License",
+            "price": "€ 6,99"
+        },
+        {
+            "name": "Student Travel",
+            "type": "Automatic Motor License",
+            "price": "€ 4,99"
+        },
+        {
+            "name": "Inter-State Travel",
+            "type": "Automatic Motor License",
+            "price": "€ 12,99"
+        },
+        {
+            "name": "Inter-City Travel",
+            "type": "Automatic Motor License",
+            "price": "€ 10,99"
+        },
+        {
+            "name": "Inter-State Travel",
+            "type": "Automatic Motor License",
+            "price": "€ 12,99"
+        },
+        {
+            "name": "International Travel",
+            "type": "Automatic Motor License",
+            "price": "€ 15,99"
+        },
+        {
+            "name": "Senior Citizen Travel",
+            "type": "Automatic Motor License",
+            "price": "€ 12,99"
+        }
+    ]
+}

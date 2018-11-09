@@ -13,10 +13,15 @@ class modal extends Component {
                     <Modal.Body>
                         {this.props.children}
                     </Modal.Body>
-                    <Modal.Footer>
-                        <Button className="mdl-btn mdl-btn-close" onClick={this.props.onExit}>Close</Button>
-                        <Button className="mdl-btn mdl-btn-primary" onClick={this.props.onPrimaryButtonClick}>{this.props.formName === "register"? "Register":"Next"}</Button>
-                    </Modal.Footer>
+                    {
+                        this.props.formName === "register"? 
+                                            null
+                                            :
+                                            <Modal.Footer>
+                                                <Button className="mdl-btn mdl-btn-close" onClick={this.props.onExit}>Close</Button>
+                                                <Button className="mdl-btn mdl-btn-primary" onClick={this.props.onPrimaryButtonClick}>Next</Button>
+                                            </Modal.Footer>
+                    }
                 </Modal>
         );
     }

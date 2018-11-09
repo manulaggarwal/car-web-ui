@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
-import {Header, Carousel, Content, Footer, Card} from '../../components'
+import {Carousel, Content, Footer, Card} from '../../components'
+import {Button} from 'react-bootstrap'
 import './home.css'
 import ScrollAnimation from 'react-animate-on-scroll';
-import {RegisterLogin} from '../index'
+import {Link} from 'react-router-dom'
 
 class Home extends Component {
     
@@ -17,30 +18,14 @@ class Home extends Component {
                 "Title 1",
                 "Title 2"
             ],
-            scrollValueY : (window && window.scrollY) || 0,
             openModal: false,
             isLoggedIn: props.isLoggedIn       
         }
-        this.handleScroll = this.handleScroll.bind(this);
         this.closeModal = this.closeModal.bind(this);
         this.openModal = this.openModal.bind(this);
     }
 
     text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll)
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll)
-    }
-
-    handleScroll() {
-        this.setState({
-            scrollValueY: window.scrollY > 0? window.scrollY : 0
-        })
-    }
 
     openModal() {
         this.setState({
@@ -83,11 +68,12 @@ class Home extends Component {
                             </Content>
                         </div>
                     </ScrollAnimation>
+                    <div className="home-book-button">
+                        <Link to="/license">
+                            <Button>Book Now</Button>
+                        </Link>
+                    </div>
                 </div>
-                <div className="home-footer-container">
-                    <Footer appName={this.props.appName}></Footer>
-                </div>
-                
             </div>
         )
     }

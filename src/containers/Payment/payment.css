@@ -1,0 +1,47 @@
+.payment-container {
+    margin-top: 100px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-heading {
+    flex: 1;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.payment-heading-title{
+    font-size: xx-large;
+    text-decoration: underline;
+    margin-left: 3%;
+}
+
+.payment-heading-logo{
+    width: 100px;
+    height: 100px;
+    margin-top: -37px;
+}
+
+.payment-cards {
+    margin-left: 10%;
+    margin-bottom: 5%;
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: auto auto auto;
+}
+
+.payment-continue {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.payment-continue button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 15px 25px 15px 25px;
+}

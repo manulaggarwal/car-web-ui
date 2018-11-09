@@ -27,3 +27,9 @@
     list-style: none;
 }
 
+.header-action-user {
+    flex: 20%;
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}

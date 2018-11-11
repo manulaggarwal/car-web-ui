@@ -3,3 +3,17 @@
     display: flex;
     justify-content: center;
 }
+
+.carousel-qoute {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 200px;
+}
+
+.carousel-qoute i {
+    word-wrap: break-word;
+    width: 65%;
+}

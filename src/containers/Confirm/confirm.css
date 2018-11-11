@@ -24,3 +24,15 @@
     margin-top: 25%;
     margin-left: 25%;
 }
+
+.confirm-home-button {
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.confirm-home-button button {
+    background-color: black;
+    color: white;
+    padding: 15px 25px 15px 25px;
+}

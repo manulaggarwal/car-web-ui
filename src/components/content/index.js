@@ -3,8 +3,8 @@ import './content.css'
 import {Image} from 'react-bootstrap'
 import movingCar from './moving-car.gif'
 
-const title = ({title}) => (
-    <div>
+const title = ({title, marginLeft="0px"}) => (
+    <div style={{marginLeft: marginLeft}}>
         <h3>{title}</h3>
     </div>
 )

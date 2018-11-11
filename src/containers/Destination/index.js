@@ -1,12 +1,20 @@
 import React, {Component} from 'react'
 import {Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
+import ScrollAnimation from 'react-animate-on-scroll';
 import './destination.css'
 
 class Destination extends Component {
 
     constructor(props) {
         super(props);
+        this.state = {
+            matrix: {
+                distance: null,
+                duration: null
+            },
+            showMatrix: false
+        }
         this.loadMaps = this.loadMaps.bind(this);
         this.fetchCurrentLocation = this.fetchCurrentLocation.bind(this);
         this.onDestinationInput = this.onDestinationInput.bind(this);
@@ -47,10 +55,21 @@ class Destination extends Component {
               console.log(response)
             if (status === 'OK') {
               this.directionsDisplay.setDirections(response);
+              this.setMatrix(response)
             } else {
               window.alert('Please Search Again!');
             }
           });
+    }
+
+    setMatrix(response) {
+        this.setState({
+            matrix: {
+                distance: response.routes[0].legs[0].distance.text,
+                duration: response.routes[0].legs[0].duration.text
+            },
+            showMatrix: true
+        })
     }
 
     loadPlaces(maps) {
@@ -77,6 +96,22 @@ class Destination extends Component {
                 <div className="destination-map-container">
                     <input type="text" placeholder="Enter Destination" autoFocus id="pac-input"></input>
                     <div id="map"></div>
+                    {
+                        this.state.showMatrix? (
+                            <ScrollAnimation
+                                animateIn="fadeIn"
+                            >
+                                <div className="destination-matrix">
+                                    <div>
+                                        <span>Distance: <b>{this.state.matrix.distance}</b></span>
+                                    </div>
+                                    <div>
+                                        <span>Duration: <b>{this.state.matrix.duration}</b></span>
+                                    </div>
+                                </div>
+                            </ScrollAnimation>
+                        ) : null
+                    }
                     <div className="destination-next-button">
                         <Link to="/confirm">
                             <Button>Book</Button>

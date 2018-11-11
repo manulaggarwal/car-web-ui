@@ -1,6 +1,7 @@
 import React,{Component} from 'react'
-import {Image} from 'react-bootstrap'
+import {Image, Button} from 'react-bootstrap'
 import ScrollAnimation from 'react-animate-on-scroll';
+import {Link} from 'react-router-dom';
 import loader from './loading.gif';
 import tick from './tick.gif';
 import './confirm.css'
@@ -44,6 +45,11 @@ class Confirm extends Component {
                             >
                                 <Image src={tick} style={{width:"150px"}}></Image>
                                 <span><b>Congrats your booking is successful. Enjoy your ride! :)</b></span>
+                                <div className="confirm-home-button">
+                                    <Link to="/">
+                                        <Button>Home</Button>
+                                    </Link>
+                                </div>
                             </ScrollAnimation>
                         ): null
                     }

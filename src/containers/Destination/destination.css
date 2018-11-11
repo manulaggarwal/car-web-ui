@@ -31,3 +31,11 @@
     font-weight: bold;
     padding: 15px 25px 15px 25px;
 }
+
+.destination-matrix {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+    font-weight: lighter;
+    margin-top: 2%;
+}

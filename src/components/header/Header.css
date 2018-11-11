@@ -32,4 +32,9 @@
     text-align: center;
     color: white;
     font-size: x-large;
+    cursor: pointer;
+}
+
+.header-action-user span {
+    color: white;
 }

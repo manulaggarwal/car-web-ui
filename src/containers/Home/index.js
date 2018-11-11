@@ -12,11 +12,11 @@ class Home extends Component {
         this.state = {
             text : [
                 this.text,
-                this.text
+                this.text2
             ],
             title : [
-                "Title 1",
-                "Title 2"
+                "What is "+props.appName+"?",
+                "Why "+props.appName+"?"
             ],
             openModal: false,
             isLoggedIn: props.isLoggedIn       
@@ -25,7 +25,15 @@ class Home extends Component {
         this.openModal = this.openModal.bind(this);
     }
 
-    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    text = `An Autonomous vehicle with mobility Licence as a service, where
+    autonomous car will pick up and drop the customer to their
+    destination based on the mobility licence which he/she have been
+    selected while booking the car.`
+
+    text2 = `The requirement of this project is to make different services of mobility licence as
+    per the user requirement/individual specific need (van, city car, bus). The user can order this car by
+    making a request either at the mobile app or website so that Autonomous car will come to the pick up
+    the user and drop them to their destination.`
 
     openModal() {
         this.setState({
@@ -64,7 +72,7 @@ class Home extends Component {
                     >
                         <div className="home-content-2">
                             <Content text={this.state.text[1]} hasImage={true}>
-                                <Content.title title={this.state.title[1]}></Content.title>
+                                <Content.title marginLeft="-250px" title={this.state.title[1]}></Content.title>
                             </Content>
                         </div>
                     </ScrollAnimation>

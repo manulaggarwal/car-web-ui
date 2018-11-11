@@ -1,0 +1,117 @@
+.account-container {
+    margin-top: 100px;
+    background-color: white;
+}
+
+.account-main {
+    margin: 5%;
+    background-color: white;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.account-heading {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.account-details {
+    display: flex;
+    margin-top: 5%;
+}
+
+.account-details-left {
+    flex: 0.5;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    height: auto;
+    margin-right: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+.account-details-right {
+    flex: 0.5;
+    border: 1px solid lightgray;
+    height: auto;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.account-details-left-content {
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.account-profile-picture {
+    border: 1px solid darkgray;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+}
+
+.account-profile-picture .picture {
+    font-size: 115px;
+    margin-left: 17px;
+    margin-top: 3px;
+    color: lightgray;
+}
+
+.account-profile-details {
+    margin-top: 10%;
+    display: flex;
+}
+
+.account-profile-details-left {
+    flex: 0.5;
+    font-weight: bold;
+    line-height: 3;
+}
+
+.account-profile-details-right {
+    line-height: 3;
+    flex: 0.5;
+}
+
+.account-details-right-buy {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.account-details-right-buy button {
+    background-color: black;
+    color: white;
+    padding: 15px 25px 15px 25px;
+}
+
+.account-details-right-heading {
+    flex: 1;
+    font-size: large;
+    font-weight: lighter;
+    margin: 0 20% 0 20%;
+    text-align: center;
+}
+
+.account-details-right-title {
+    flex: 1;
+    font-size: x-large;
+    font-weight: bold;
+    margin: 5%;
+}
+
+.account-logout {
+    margin-top: 5%;
+}
+
+.account-logout button{
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    padding: 15px 25px 15px 25px;
+}

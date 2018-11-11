@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Home, RegisterLogin, License, Destination, Payment, Confirm} from './containers'
+import {Home, RegisterLogin, License, Destination, Payment, Confirm, Account} from './containers'
 import {Header, Footer} from './components'
 import {checkIfloggedIn} from './utils/loginutils'
 import {Router, Route} from 'react-router';
@@ -15,7 +15,7 @@ class App extends Component {
     this.state = {
       appName: "VolksAuto",
       isLoggedIn: checkIfloggedIn(),
-      userData: null,
+      userData: (window.localStorage.getItem("user") && JSON.parse(window.localStorage.getItem("user"))) || null,
       license: null
     }
     this.updateLoggedInState = this.updateLoggedInState.bind(this)
@@ -58,24 +58,28 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="app-container">
-          <div className={"app-header-container app-header-container-color-top"} >
-              <Header 
-                appName={this.state.appName} 
-                onClick={this.openModal}
-                data={this.state.userData}
-              >
-            </Header>
-          </div>
-
           <Router history={browserHistory}>
+            <div className="app-container">
+            <div className={"app-header-container app-header-container-color-top"} >
+                <Header 
+                  appName={this.state.appName} 
+                  onClick={this.openModal}
+                  data={this.state.userData}
+                >
+              </Header>
+            </div>
             <div style={{width:"100%"}}>
               <Route 
                 exact path="/" 
-                component={Home} 
-                appName={this.state.appName}
-                isLoggedIn={this.state.isLoggedIn}
-                updateLoggedInState={this.updateLoggedInState}
+                render={(routerProps)=>
+                  <Home
+                    {...routerProps}
+                    appName={this.state.appName}
+                    isLoggedIn={this.state.isLoggedIn}
+                    updateLoggedInState={this.updateLoggedInState}
+                  >
+                  </Home>
+                }
               >
               </Route>
               <Route
@@ -98,12 +102,17 @@ class App extends Component {
                 component={Confirm}
               >
               </Route>
+              <Route
+                path="/account"
+                component={Account}
+              >
+              </Route>
+            </div>
             </div>
           </Router>
           <div className="home-footer-container">
             <Footer appName={this.state.appName}></Footer>
           </div>
-        </div>
         {
           this.state.openModal? (
             <div className="home-modal-container">

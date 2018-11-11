@@ -1,9 +1,13 @@
 import React from 'react'
 import './Header.css'
-
 import logo from './car-logo.png'
 import {Button, Image} from 'react-bootstrap'
 import {Navbar} from '../index'
+import {Link} from 'react-router-dom'
+// import {Router, Route} from 'react-router';
+// import {createBrowserHistory} from 'history';
+
+// const browserHistory = createBrowserHistory();
 
 const header = ({appName, onClick, data}) => (
     
@@ -14,10 +18,12 @@ const header = ({appName, onClick, data}) => (
                     <span style={{fontSize: "x-large", fontWeight: "bold"}}>{appName}</span>
                 </div>
             {
-                data? 
-                <div className="header-action-user">
-                    <span className="glyphicon glyphicon-user" aria-hidden="true">&nbsp;{data.firstName}</span>
-                </div>
+                data?
+                    <div className="header-action-user">
+                        <Link to="/account">
+                            <span className="glyphicon glyphicon-user" aria-hidden="true">&nbsp;{data.firstName}</span>
+                        </Link>
+                    </div>
                 : 
                 <div className="header-action-items">
                     <Button variant="light" onClick={onClick}><b>Register/Login</b></Button>

@@ -23,7 +23,7 @@ class Payment extends Component {
             <div className="payment-container">
                 <div className="payment-heading">
                     <Image src={paycard} className="payment-heading-logo"></Image>
-                    <h4 className="payment-heading-title">Purchase License</h4>
+                    <h4 className="payment-heading-title">Choose Payment Option</h4>
                 </div>
                 <div className="payment-cards">
                         <div className="pay-card-1">

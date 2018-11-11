@@ -1,44 +1,49 @@
 {
     "licenses": [ 
         {
-            "name": "Individual Travel",
+            "name": "Individual Travel Monthly",
             "type": "Automatic Motor License",
-            "price": "€ 9,99"
+            "price": "€ 1.500,00"
         },
         {
-            "name": "Ride Sharing Travel",
+            "name": "Individual Travel Daily",
             "type": "Automatic Motor License",
-            "price": "€ 6,99"
+            "price": "€ 150,00"
         },
         {
-            "name": "Student Travel",
+            "name": "Ride Sharing Travel Monthly",
             "type": "Automatic Motor License",
-            "price": "€ 4,99"
+            "price": "€ 600,00"
         },
         {
-            "name": "Inter-State Travel",
+            "name": "Ride Sharing Travel Daily",
             "type": "Automatic Motor License",
-            "price": "€ 12,99"
+            "price": "€ 30,00"
         },
         {
-            "name": "Inter-City Travel",
+            "name": "Student Travel Semester",
             "type": "Automatic Motor License",
-            "price": "€ 10,99"
+            "price": "€ 500,00"
         },
         {
-            "name": "Intra-City Travel",
+            "name": "Senior Citizen Travel Monthly",
             "type": "Automatic Motor License",
-            "price": "€ 11,99"
+            "price": "€ 1.200,00"
         },
         {
-            "name": "International Travel",
+            "name": "Senior Citizen Travel Daily",
             "type": "Automatic Motor License",
-            "price": "€ 15,99"
+            "price": "€ 150,00"
         },
         {
-            "name": "Senior Citizen Travel",
+            "name": "Quick Booking Travel",
             "type": "Automatic Motor License",
-            "price": "€ 12,99"
+            "price": "€ 4,00/km"
+        },
+        {
+            "name": "Business Travel",
+            "type": "Automatic Motor License",
+            "price": "€ 4,00/km"
         }
     ]
 }
